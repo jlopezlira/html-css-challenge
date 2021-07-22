@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mixins';
 
 html {
   box-sizing: border-box;
@@ -8,33 +9,29 @@ html {
 }
 
 ::-moz-selection {
-  background: $color-purple;
-  color: $color-white;
-  text-shadow: none;
+  @include selection($color-yellow);
 }
 
 ::selection {
-  background: $color-purple;
-  color: $color-white;
-  text-shadow: none;
+  @include selection($color-yellow);
 }
 
 .background {
   background: url('../assets/Background.svg') no-repeat left top;
   height: 520px;
-  width: 415px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 415px;
 }
 
 .container {
-  width:fit-content;
-  display: flex;
   align-items: center;
-  position: relative;
-  margin-top: 90px;
+  display: flex;
   margin-left: 290px;
+  margin-top: 90px;
+  position: relative;
+  width: fit-content;
 
   &_image {
     overflow: hidden;
@@ -61,15 +58,15 @@ html {
       margin: 30px 0;
     }
 
-    &--logo{
+    &--logo {
       width: 238px;
     }
 
   }
 }
 
-@media (max-width: 480px) {
-  .container{
+@media (max-width: 575.98px) {
+  .container {
     margin-top: 80px;
     margin-left: 0;
     padding: 10px;

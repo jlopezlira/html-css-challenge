@@ -6,13 +6,13 @@ html {
 }
 
 ::-moz-selection {
-  background: #703660;
+  background-color: #D9A563;
   color: #ffffff;
   text-shadow: none;
 }
 
 ::selection {
-  background: #703660;
+  background-color: #D9A563;
   color: #ffffff;
   text-shadow: none;
 }
@@ -20,19 +20,19 @@ html {
 .background {
   background: url("../assets/Background.svg") no-repeat left top;
   height: 520px;
-  width: 415px;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
+  width: 415px;
 }
 
 .container {
-  width: fit-content;
-  display: flex;
   align-items: center;
-  position: relative;
-  margin-top: 90px;
+  display: flex;
   margin-left: 290px;
+  margin-top: 90px;
+  position: relative;
+  width: fit-content;
 }
 .container_image {
   overflow: hidden;
@@ -60,7 +60,7 @@ html {
   width: 238px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 575.98px) {
   .container {
     margin-top: 80px;
     margin-left: 0;

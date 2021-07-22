@@ -1,0 +1,7 @@
+@import 'colors';
+
+@mixin selection($backgroundColor) {
+  background-color: $backgroundColor;
+  color: $color-white;
+  text-shadow: none;
+}
